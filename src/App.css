@@ -1,0 +1,212 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #d1f3da;
+  opacity: 1;
+}
+
+h1{
+    color: #163f09;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #2e7d32;
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* SECTION */
+.section {
+  padding: 20px;
+  color: black;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 4px 4px 10px 3px rgb(3, 44, 4);
+    color: rgb(34, 59, 5);
+
+}
+
+th, td {
+  border: 0.5px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #4caf50;
+  color: white;
+  border-radius: 0px;
+}
+
+/* BUTTONS */
+button {
+  margin: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: none;
+  background: #2e7d32;
+  color: white;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #1b5e20;
+}
+
+/* INPUTS */
+input, select {
+  padding: 6px;
+  margin-right: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 1px 6px 2px rgb(32, 130, 34);
+    color: rgb(39, 71, 4);
+    background-color: transparent;
+    border: none;
+}
+
+/* DASHBOARD CARDS */
+.card {
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 4px 4px 10px 3px rgb(3, 44, 4);
+    color: rgb(203, 225, 178);
+  
+}
+
+/* USERS PAGE BACKGROUND IMAGE */
+.users-bg {
+  min-height: 100vh;
+  background: url("/farmer.jpg") no-repeat center center/cover;
+  position: relative;
+}
+
+.vehicle-bg{
+  min-height: 100vh;
+  background: url("/vehicle.jpg") no-repeat center center/cover;
+  position: relative;
+}
+.vehicle-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 125, 50, 0.3);
+  z-index: 0;
+}
+
+.vehicle-bg .section {
+  position: relative;
+  z-index: 1;
+}
+
+/* OPTIONAL: LIGHT BLUR EFFECT */
+.vehicle-bg::before {
+  backdrop-filter: blur(3px);
+}
+
+/* GREEN OVERLAY */
+.users-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 125, 50, 0.3);
+  z-index: 0;
+}
+
+/* KEEP CONTENT ABOVE OVERLAY */
+.users-bg .section {
+  position: relative;
+  z-index: 1;
+}
+
+/* OPTIONAL: LIGHT BLUR EFFECT */
+.users-bg::before {
+  backdrop-filter: blur(2px);
+}
+
+
+.company-bg{
+  min-height: 100vh;
+  background: url("/companies.jpg") no-repeat center center/cover;
+  position: relative;
+}
+.company-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 125, 50, 0.3);
+  z-index: 0;
+}
+
+.company-bg .section {
+  position: relative;
+  z-index: 1;
+}
+
+/* OPTIONAL: LIGHT BLUR EFFECT */
+.company-bg::before {
+  backdrop-filter: blur(2px);
+}
+
+.dashboard-bg{
+  min-height: 100vh;
+  background: url("/dashboard.png") no-repeat center center/cover;
+  position: relative;
+}
+.dashboard-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(64, 177, 69, 0.3);
+  z-index: 0;
+}
+
+.dashboard-bg .section {
+  position: relative;
+  z-index: 1;
+}
+
+/* OPTIONAL: LIGHT BLUR EFFECT */
+.dashboard-bg::before {
+  backdrop-filter: blur(2px);
+}

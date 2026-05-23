@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0b1d14;
+  color: white;
+}
+
+/* PAGE */
+.page {
+  padding: 30px;
+}
+
+/* NAVBAR */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+/* 🔥 BACKGROUND IMAGE WITH LOW OPACITY */
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("navbar.jpeg") center/cover no-repeat;
+  opacity: 0.12; /* adjust this if needed */
+  z-index: 0;
+}
+
+/* KEEP NAVBAR CONTENT ABOVE IMAGE */
+.navbar * {
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.logo span {
+  color: #2ecc71;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* INPUTS */
+input, select {
+  background: #0f2a1f;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* BUTTON */
+button {
+  background: #2ecc71;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #27ae60;
+}
+
+/* TABLE */
+.table-container {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  padding: 12px;
+  color: #aaa;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+td {
+  padding: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+tr:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+/* ACTION BUTTONS */
+.action-btn {
+  margin-right: 12px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.action-btn:hover {
+  color: white;
+}
